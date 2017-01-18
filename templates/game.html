@@ -1,10 +1,10 @@
-<!doctype html>
+{% extends 'base.html' %}
 
-<html>
-<head>
-    <title>MADLIB TIME</title>
-</head>
-<body>
+{% block title %}MADLIB TIME{% endblock %}
+
+{% block header %}Enter values{% endblock %}
+
+{% block content%}
     <form action="/madlib">
         Pick a color: <input type="text" name="color"><br>
         Pick a noun: <input type="text" name="noun"><br>
@@ -12,6 +12,4 @@
         Pick an adjective: <input type="text" name="adjective"><br>
         <input type="submit">      
     </form>
-
-</body>
-</html>
+{% endblock %}

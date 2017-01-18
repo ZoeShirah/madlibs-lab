@@ -16,7 +16,11 @@ AWESOMENESS = [
 def start_here():
     """Homepage."""
 
-    return "Hi! This is the home page."
+    return """Hi! This is the home page.
+            <form action="/hello">
+              <input type="submit" value="Go to hello!">
+            </form>
+            """
 
 
 @app.route('/hello')

@@ -1,12 +1,6 @@
-<!doctype html>
+{% extends 'base.html' %}
 
-<html>
-<head>
-    <title>Your Mad!(lib)</title>
-</head>
-<body>
-    <p>
-        There once was a {{hue}} {{gizmo}} sitting in the Hackbright Lab. When {{homosapien}} went to pick it up, it burst into flames in a totally {{describer}} way.
-    </p>
-</body>
-</html>
+{% block title %}Your Mad!(lib){% endblock %}
+
+{% block header %}Your Story!{% endblock %}
+{% block content %}There once was a {{hue}} {{gizmo}} sitting in the Hackbright Lab. When {{homosapien}} went to pick it up, it burst into flames in a totally {{describer}} way.{% endblock %}
